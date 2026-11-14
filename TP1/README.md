@@ -6,7 +6,7 @@ ETAPE 1:
 
 
 
-Une machine virtuelle est une représentation de machine contenant ses propres ressources matérielles. Cela lui permet donc d'exécuter ses propres applications et son propre OS.
+Une machine virtuelle est une représentation logicielle d'une machine. Celle ci se trouve dans une machine physique. Elle a ses propres ressources matérielles virtuelles ce qui lui permet donc d'exécuter ses propres applications et son propre OS.
 
 
 
@@ -17,18 +17,16 @@ Une machine virtuelle est une représentation de machine contenant ses propres r
 Deux avantages de la virtualisation dans un environnement professionnel sont :
 
 * la possibilité d'isoler ses applications et environnement tout en travaillant avec la même machine
-* Une optimisation de l'utilisation du CPU, de l'énergie de la machine physique
-
+* Une optimisation des ressources (meilleure utilisation des ressources matérielles ce qui peut conduire à une moindre consommation d'énergie)
 
 
 &#x09;3. Quelle différence existe-t-il entre travailler directement sur votre ordinateur et travailler dans
 
 une machine virtuelle?
 
+La principale différence entre une machine virtuelle et une machine physique est que la machine physique a un OS qui utilise directement les ressources matérielles tandis que la machine virtuelle a un OS qui utilise des ressources virtualisées par un hyperviseur.
 
-
-La différence qui existe entre travailler directement sur notre ordinateur et sur une machine virtuelle est la malléabilité des machines virtuelles. En effet, sur une machine virtuelle on peut réaliser des snapshots pour conserver une version particulière de la machine. Il est aussi possible de faire des tests qui s'ils n'aboutissent à rien nous permettent de revenir en arrière. On peut également gérer la quantité de ressource. 
-
+Les machines virtuelles offrent également une plus grande flexibilité. Il est possible de créer, supprimer ou modifier les machines virtuelles sans affecter directement le système hôte. De même, il est possible de conserver un état particulier des machines virtuelles à l'aide de snapshot. Ceci facilite notamment les tests et expérimentations.
 
 
 ETAPE 2:
